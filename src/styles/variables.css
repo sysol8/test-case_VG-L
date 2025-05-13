@@ -1,0 +1,12 @@
+:root {
+    --background-color: #0c0c0c;
+    --primary-color: #231815;
+    --accent-color: #e45302;
+
+    --primary-text-color: #fff;
+    --secondary-text-color: #f5f5f5;
+    --disabled-color: #808080;
+
+    --secondary-text-font-size: clamp(1.4rem, 1.1947rem + 0.5263vw, 1.6rem);
+    --accent-text-font-size: clamp(1.6rem, 0.9842rem + 1.5789vw, 2.2rem);
+}
