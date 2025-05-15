@@ -8,65 +8,65 @@ const products = [
     id: 1,
     name: "Встраиваемый светильник Markt",
     discount: true,
-    oldPrice: "3 490",
-    newPrice: "6 700",
-    src: "/images/markt.jpg",
+    newPrice: "3 490",
+    oldPrice: "6 700",
+    src: "/images/markt.png",
   },
   {
     id: 2,
     name: "Линейный светильник ARG",
     discount: false,
-    oldPrice: "6 700",
-    newPrice: "",
-    src: "/images/arg.jpg",
+    newPrice: "6 700",
+    oldPrice: "",
+    src: "/images/arg.png",
   },
   {
     id: 3,
     name: "Сведодиодный светильник",
     discount: true,
-    oldPrice: "5 060",
-    newPrice: "6 060",
-    src: "/images/light.jpg",
+    newPrice: "5 060",
+    oldPrice: "6 060",
+    src: "/images/light.png",
   },
   {
     id: 4,
     name: "Встраиваемый светильник Markt",
     discount: false,
-    oldPrice: "3 490",
-    newPrice: "",
-    src: "/images/markt.jpg",
+    newPrice: "3 490",
+    oldPrice: "",
+    src: "/images/markt.png",
   },
   {
     id: 5,
     name: "Линейный светильник ARG",
     discount: true,
-    oldPrice: "6 700",
-    newPrice: "6 060",
-    src: "/images/arg.jpg",
+    newPrice: "6 700",
+    oldPrice: "6 060",
+    src: "/images/arg.png",
   },
   {
     id: 6,
     name: "Сведодиодный светильник",
     discount: false,
-    oldPrice: "5 060",
-    newPrice: "",
-    src: "/images/light.jpg",
+    newPrice: "5 060",
+    oldPrice: "",
+    src: "/images/light.png",
   },
   {
     id: 7,
     name: "Встраиваемый светильник Markt",
     discount: true,
-    oldPrice: "3 490",
-    newPrice: "6 060",
-    src: "/images/markt.jpg",
+    newPrice: "3 490",
+    oldPrice: "6 060",
+    src: "/images/markt.png",
   },
   {
     id: 8,
     name: "Линейный светильник ARG",
     discount: false,
-    oldPrice: "6 700",
-    newPrice: "",
-    src: "/images/arg.jpg",
+    newPrice: "6 700",
+    oldPrice: "",
+    src: "/images/arg.png",
   },
 ];
 
@@ -87,17 +87,20 @@ function renderCatalogue() {
 		img.src = product.src;
 		img.alt = product.name;
 
-		clone.querySelector(".product__title").textContent = product.name;
+		const productTitle = clone.querySelector(".product__title");
+    productTitle.textContent = product.name;
+    productTitle.setAttribute('title', `${product.name}`)
 
+    const newPrice = clone.querySelector(".product__price_new");
 		const oldPrice = clone.querySelector(".product__price_old");
-		const newPrice = clone.querySelector(".product__price_new");
 
-		oldPrice.textContent = `${product.oldPrice} ₽`;
+		newPrice.textContent = `${product.newPrice} ₽`;
 
-		if (product.discount && product.newPrice) {
+		if (product.discount) {
 			newPrice.textContent = `${product.newPrice} ₽`;
+      oldPrice.textContent = `${product.oldPrice} ₽`;
 		} else {
-			newPrice.remove();
+			oldPrice.remove();
 		}
 
 		list.appendChild(clone);
