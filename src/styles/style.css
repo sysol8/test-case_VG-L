@@ -195,3 +195,10 @@
   inline-size: 4.8rem;
 }
 
+@media (width >= 768px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, min-content);
+  }
+}
+
