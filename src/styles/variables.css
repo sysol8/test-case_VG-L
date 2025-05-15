@@ -10,7 +10,11 @@
     --title-font-size: clamp(2.4rem, 1.8902rem + 1.3072vw, 4.4rem);
     --disabled-font-size: clamp(1.4rem, 0.5746rem + 2.1164vw, 2.2rem);
     --main-font-size: clamp(1.6rem, 1.3937rem + 0.5291vw, 1.8rem);
-    --secondary-font-size: clamp(1.4rem, 1.1937rem + 0.5291vw, 1.6rem);
+    /* --secondary-font-size: clamp(1.4rem, 1.1937rem + 0.5291vw, 1.6rem); */
+
+
+    --accent-font-size: clamp(1.6rem, 0.9810rem + 1.5873vw, 2.2rem);
+    --complementary-font-size: clamp(1.4rem, 0.5746rem + 2.1164vw, 2.2rem);
     --static-font-size: 1.6rem;
 
     --font-weight-regular: 400;
