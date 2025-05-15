@@ -124,7 +124,7 @@
         <p class="address__title footer__title">Контакты</p>
         <ul class="address__list">
           <li class="address__list-item">
-            <p class="address__description footer__description">
+            <p class="address__description">
               Email:
               <a class="address__link" href="mailto:urban.dwelling@yandex.com"
                 >urban.dwelling@yandex.com</a
@@ -132,7 +132,7 @@
             </p>
           </li>
           <li class="address__list-item">
-            <p class="address__description footer__description">
+            <p class="address__description">
               Телефон:
               <a class="address__link" href="tel:+79999999999"
                 >8 (999) 999-99-99</a
@@ -141,10 +141,10 @@
           </li>
         </ul>
       </address>
-      <nav class="footer__navigation navigation">
+      <nav class="footer__navigation">
         <p class="address__title footer__title">Услуги</p>
-        <ul class="navigation__list">
-          <li class="navigation__list-item">
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__list-item">
             <a href="#0" class="navigation__link link">Каталог</a>
           </li>
           <li class="navigation__list-item">
@@ -161,19 +161,19 @@
           </li>
         </ul>
       </nav>
-      <nav class="footer__navigation legal" aria-label="Правовая информация">
-        <ul class="navigation__list">
-          <li class="navigation__list-item">
+      <nav class="legal" aria-label="Правовая информация">
+        <ul class="legal__list">
+          <li class="legal__list-item">
             <a href="#0" class="navigation__link link">Публичная оферта</a>
           </li>
-          <li class="navigation__list-item">
+          <li class="legal__list-item">
             <a href="#0" class="navigation__link link"
               >Политика персональных данных</a
             >
           </li>
-          <li aria-hidden="true">
-            <span class="hidden-text">i</span>
-          </li>
+          <!-- <li aria-hidden="true">
+            <span class="hidden-text"></span>
+          </li> -->
         </ul>
       </nav>
       <div class="payment-methods" aria-label="Способы оплаты">
@@ -268,8 +268,7 @@
         </ul>
       </div>
       <p class="aside">
-        Этот сайт защищен от спама службой reCAPTCHA Google.
-        <a class="aside__link link" href="#0">Политика конфиденциальности</a>/<a
+        Этот&nbsp;сайт&nbsp;защищен&nbsp;от&nbsp;спама&nbsp;службой reCAPTCHA Google. <a class="aside__link link" href="#0">Политика конфиденциальности</a>/<a
           class="aside__link link"
           href="#0"
           >Условия предоставления услуг</a

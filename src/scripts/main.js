@@ -87,7 +87,9 @@ function renderCatalogue() {
 		img.src = product.src;
 		img.alt = product.name;
 
-		clone.querySelector(".product__title").textContent = product.name;
+		const productTitle = clone.querySelector(".product__title");
+    productTitle.textContent = product.name;
+    productTitle.setAttribute('title', `${product.name}`)
 
     const newPrice = clone.querySelector(".product__price_new");
 		const oldPrice = clone.querySelector(".product__price_old");
