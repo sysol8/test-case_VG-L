@@ -10,7 +10,7 @@ const products = [
     discount: true,
     newPrice: "3 490",
     oldPrice: "6 700",
-    src: "/images/markt.png",
+    src: "images/markt.png",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     discount: false,
     newPrice: "6 700",
     oldPrice: "",
-    src: "/images/arg.png",
+    src: "images/arg.png",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     discount: true,
     newPrice: "5 060",
     oldPrice: "6 060",
-    src: "/images/light.png",
+    src: "images/light.png",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const products = [
     discount: false,
     newPrice: "3 490",
     oldPrice: "",
-    src: "/images/markt.png",
+    src: "images/markt.png",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const products = [
     discount: true,
     newPrice: "6 700",
     oldPrice: "6 060",
-    src: "/images/arg.png",
+    src: "images/arg.png",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const products = [
     discount: false,
     newPrice: "5 060",
     oldPrice: "",
-    src: "/images/light.png",
+    src: "images/light.png",
   },
   {
     id: 7,
@@ -58,7 +58,7 @@ const products = [
     discount: true,
     newPrice: "3 490",
     oldPrice: "6 060",
-    src: "/images/markt.png",
+    src: "images/markt.png",
   },
   {
     id: 8,
@@ -66,7 +66,7 @@ const products = [
     discount: false,
     newPrice: "6 700",
     oldPrice: "",
-    src: "/images/arg.png",
+    src: "images/arg.png",
   },
 ];
 
